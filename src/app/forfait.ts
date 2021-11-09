@@ -1,7 +1,7 @@
-export interface Forfaits {
+export interface Forfait {
   destination: string,
   villeDepart: string,
-  hotel: Hotels,
+  hotel: Hotel,
   dateDepart: string,
   dateRetour: string,
   prix: number,
@@ -9,7 +9,7 @@ export interface Forfaits {
   vedette: boolean
 }
 
-export interface Hotels {
+export interface Hotel {
   nom: string,
   coordonnees: string,
   nombreEtoiles: number,

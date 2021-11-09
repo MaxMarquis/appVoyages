@@ -1,5 +1,7 @@
 <title>App Voyages Maxim</title>
 
-<app-mini-forfait></app-mini-forfait>
+<div *ngFor='let forfait of forfaits'>
+  <app-mini-forfait [forfait]='forfait' *ngIf='forfait.vedette'></app-mini-forfait>
+</div>
 
 <router-outlet></router-outlet>
