@@ -1,4 +1,11 @@
+:host {
+  display: block;
+  min-width: 33%;
+  flex-grow: 1;
+}
+
 .miniForfait {
-  max-width: 400px;
-  margin-bottom: 8px;
+  display: flex;
+  height: 6rem;
+  border-radius: 0;
 }

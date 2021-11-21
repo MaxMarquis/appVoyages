@@ -1,12 +1,14 @@
-<mat-card class="miniForfait">
-  <mat-card-title-group>
-    <mat-card-subtitle>{{forfait.destination}} De {{forfait.villeDepart}}</mat-card-subtitle>
-    <mat-card-title>{{forfait.hotel.nom}}</mat-card-title>
-  </mat-card-title-group>
-  <mat-card-content>
-    <app-etoiles></app-etoiles>
-    <p class="prix">{{forfait.prix}}</p>
-    <p class="taxes">Taces et frais inclus</p>
-    <p class="depart">{{forfait.dateDepart}}</p>
-  </mat-card-content>
-</mat-card>
+<div>
+  <mat-card class="miniForfait">
+    <div>
+      <mat-card-subtitle>{{forfait.destination}} De {{forfait.villeDepart}}</mat-card-subtitle>
+      <mat-card-title>{{forfait.hotel.nom}}</mat-card-title>
+      <app-etoiles [nombreEtoiles]="forfait.hotel.nombreEtoiles"></app-etoiles>
+    </div>
+    <div class="droite">
+      <p class="prix">{{forfait.prix}}$</p>
+      <p class="taxes">Taces et frais inclus</p>
+      <p class="depart">{{forfait.dateDepart}}, {{nombreJours(forfait.dateDepart, forfait.dateRetour)}}</p>
+    </div>
+  </mat-card>
+</div>

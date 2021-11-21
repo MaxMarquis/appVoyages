@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  flex-grow: 1;
+}
+
+.ForfaitComplet {
+  display: flex;
+  border-radius: 0;
+}
+
+img {
+  width: 230px;
+  height: 330px;
+  object-fit: cover;
+}
+
+.rabais {
+  text-decoration: line-through;
+  color: red;
+}
+
+.prix {
+  color: #002855;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.cantre {
+  width: 30rem;
+}
+
+.destination {
+  color: #696969;
+}
+
+.hotel {
+  color: #0071b3;
+}
+
+.droite {
+  text-align: right;
+}

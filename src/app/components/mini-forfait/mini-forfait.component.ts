@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Forfait } from 'src/app/forfait';
 import { FORFAITS } from 'src/app/mock-forfaits';
+import { ForfaitCompletComponent } from '../forfait-complet/forfait-complet.component';
 
 @Component({
   selector: 'app-mini-forfait',
@@ -25,9 +26,20 @@ export class MiniForfaitComponent implements OnInit {
     vedette: false
   }
 
-  constructor() { }
+
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  // Tentative de compteur entre les dates, mais ne fonctionne pas :)
+  nombreJours(date1: any, date2: any) {
+    var newDate1: any = new Date(date1)
+    var newDate2: any = new Date(date2)
+    var res: any = Math.floor((newDate2 - newDate1) / (1000 * 60 * 60 * 24));
+    return res
   }
 
 }

@@ -1,1 +1,25 @@
-<p>forfait-complet works!</p>
+<div>
+  <mat-card class="ForfaitComplet">
+    <div class="gauche">
+      <img src="../../../assets/img/Barcelo-Arenas-Blancas-Pool-001.jpg">
+    </div>
+    <div class="centre">
+      <mat-card-subtitle class="destination">{{forfait.destination}} De {{forfait.villeDepart}}</mat-card-subtitle>
+      <mat-card-title class="hotel">{{forfait.hotel.nom}}</mat-card-title>
+      <app-etoiles [nombreEtoiles]="forfait.hotel.nombreEtoiles"></app-etoiles>
+      <p>{{forfait.hotel.caracteristiques}}</p>
+    </div>
+    <div class="droite">
+      <p *ngIf="forfait.rabais > 0; else elseBlock">
+        <span class="rabais">{{forfait.prix}}$</span>
+        <span class="prix"> {{forfait.prix -
+          forfait.rabais}}$</span>
+      </p>
+      <ng-template #elseBlock>
+        <p class="prix">{{forfait.prix}}$</p>
+      </ng-template>
+      <p class="taxes">Taces et frais inclus</p>
+      <p class="depart">{{forfait.dateDepart}}</p>
+    </div>
+  </mat-card>
+</div>

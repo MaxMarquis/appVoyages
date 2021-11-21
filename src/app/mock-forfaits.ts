@@ -111,7 +111,7 @@ export const FORFAITS: Forfait[] = [
     dateRetour: '2020-01-08',
     prix: 500,
     rabais: 100,
-    vedette: false
+    vedette: true
   },
   {
     destination: 'Suisse',
@@ -135,7 +135,7 @@ export const FORFAITS: Forfait[] = [
     hotel: {
       nom: 'Deuxieme Hotel...',
       coordonnees: '...',
-      nombreEtoiles: 6,
+      nombreEtoiles: 7,
       nombreChambres: 100,
       caracteristiques: ['Face à la plage', 'Ascenseur', 'Miniclub']
     },
@@ -143,7 +143,7 @@ export const FORFAITS: Forfait[] = [
     dateRetour: '2020-01-08',
     prix: 500,
     rabais: 100,
-    vedette: false
+    vedette: true
   },
   {
     destination: 'Grèce',
@@ -175,7 +175,7 @@ export const FORFAITS: Forfait[] = [
     dateRetour: '2020-01-08',
     prix: 500,
     rabais: 100,
-    vedette: false
+    vedette: true
   },
 
 ]
