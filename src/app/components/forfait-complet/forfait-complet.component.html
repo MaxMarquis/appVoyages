@@ -8,6 +8,7 @@
       <mat-card-title class="hotel">{{forfait.hotel.nom}}</mat-card-title>
       <app-etoiles [nombreEtoiles]="forfait.hotel.nombreEtoiles"></app-etoiles>
       <p>{{forfait.hotel.caracteristiques}}</p>
+      <p>{{forfait.hotel.coordonnees}}</p>
     </div>
     <div class="droite">
       <p *ngIf="forfait.rabais > 0; else elseBlock">
